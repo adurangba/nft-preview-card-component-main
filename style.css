@@ -140,6 +140,25 @@ hr {
     color: #04fdf9;
 }
 
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 50%;
+    }
+
+    div.contain p.equ {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    div.contain p.equ {
+        font-size: 1.3rem;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .container {
         width: 90%;
