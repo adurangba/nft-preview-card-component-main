@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 75.5%;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #0d1a2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 25%;
+    padding: 1%;
+    background-color: #15273f;
+    border-radius: 12px;
+    padding: 2%;
+}
+
+div.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+div.image {
+    position: relative;
+    margin-bottom: 4%;
+    width: 100%;
+    cursor: pointer;
+    height: 270px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #04fdf969;
+    top:0;
+    left: 0;
+    display: none;
+}
+
+div.image:hover .overlay{
+    display: block;
+}
+
+
+div.contain p.big {
+    padding: 2% 0;
+    color: #ffe;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+div.contain p.equ {
+    color: #5a779f;
+    padding: 1% 0;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    width: 26ch;
+}
+
+div.contain p.big:hover{
+    color: #04fdf9;
+}
+
+.anchor {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.anchor a img {
+    margin-right: 11%;
+}
+
+a:first-of-type {
+    color: #04fdf9;
+    margin-right: 20%;
+}
+
+a:last-of-type {
+    color: #5a779f;
+}
+
+hr {
+    margin-top: 7%;
+}
+
+.last {
+    border-top: 1px solid #5a779f;
+    margin-top: 7%;
+    padding: 4% 0 0 ;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.last img {
+    width: 40px;
+}
+
+.last .end {
+    padding: 3%;
+    color: #5a779f;
+    font-family: arial;
+    font-size: .95rem;
+}
+
+.last .end span {
+   font-size: 1rem;
+    font-weight: 500;
+    color: #ffe;
+    cursor: pointer;
+}
+
+.last .end span:hover {
+    color: #04fdf9;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    div.contain p.equ {
+        font-size: 1.3rem;
+    }
+}
